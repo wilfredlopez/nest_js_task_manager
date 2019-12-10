@@ -90,6 +90,21 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+## Deploy to Production
+
+enviroment variables need to be configured.
+
+```typescript
+process.env.JWT_SECRET; //Secret For JWT;
+process.env.RDS_type; // TYPE OF DATABASE eg. postgres
+process.env.RDS_databaseName; // Name of the Database
+process.env.RDS_synchronize; // false by default
+process.env.RDS_username; // Username of the database
+process.env.RDS_password; // Password of the database
+process.env.RDS_host; /// Host of the database
+process.env.RDS_port; // Port of the database
+```
+
 ## Test
 
 ```bash
